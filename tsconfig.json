@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    // Environment setup
+    "baseUrl": ".",
+    "paths": {
+      "@ahoui/*": ["packages/*/src"]
+    },
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "Preserve",
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+
+    // Bundler settings
+    "moduleResolution": "bundler",
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+
+    // type practices
+    "strict": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noPropertyAccessFromIndexSignature": false,
+
+    // Project references
+    "composite": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./dist/tsbuildinfo"
+  },
+  "include": ["packages"],
+  "exclude": ["dist", "node_modules", "**/*.test.ts", "**/*.spec.ts"]
+}
