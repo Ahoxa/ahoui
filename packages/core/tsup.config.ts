@@ -1,4 +1,5 @@
 import { defineConfig } from "tsup";
+import { vanillaExtractPlugin } from "@vanilla-extract/esbuild-plugin";
 
 export default defineConfig({
   entry: ["src/index.ts"],
@@ -6,4 +7,10 @@ export default defineConfig({
   dts: true,
   clean: true,
   treeshake: true,
+  sourcemap: true,
+  esbuildPlugins: [
+    vanillaExtractPlugin({
+      identifiers: "short",
+    }),
+  ],
 });
