@@ -13,6 +13,6 @@
     }
   },
   "scripts": {
-    "build": "bunx tsup src/index.ts --dts --format esm,cjs"
+    "build": "bunx tsup"
   }
 }
