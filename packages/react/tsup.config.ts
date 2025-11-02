@@ -5,8 +5,8 @@ export default defineConfig({
   format: ["esm", "cjs"],
   dts: true,
   clean: true,
-  external: ["react", "react-dom"],
   treeshake: true,
+  sourcemap: true,
   esbuildOptions(options) {
     options.jsx = "automatic";
   },
