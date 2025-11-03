@@ -34,6 +34,10 @@
     "incremental": true,
     "tsBuildInfoFile": "./dist/tsbuildinfo"
   },
-  "include": ["packages"],
+  "include": [
+    "packages/*/src",
+    "packages/*/src/**/*.ts",
+    "packages/*/src/**/*.tsx"
+  ],
   "exclude": ["dist", "node_modules", "**/*.test.ts", "**/*.spec.ts"]
 }
