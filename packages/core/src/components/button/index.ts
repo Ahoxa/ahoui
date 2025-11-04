@@ -1,15 +1,15 @@
 export type ButtonVariant = "solid" | "outline" | "ghost";
 export type ButtonSize = "sm" | "md" | "lg";
 
-export interface ButtonProps {
+export type ButtonBaseProps = {
   variant?: ButtonVariant;
   size?: ButtonSize;
   disabled?: boolean;
   loading?: boolean;
   onClick?: (e: Event) => void;
-}
+};
 
-export const getButtonAttributes = (props: ButtonProps) => {
+export const getButtonAttributes = (props: ButtonBaseProps) => {
   const {
     variant = "solid",
     size = "md",
