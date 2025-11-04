@@ -14,5 +14,14 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "bunx tsup"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^10.0.4",
+    "@storybook/addon-docs": "^10.0.4",
+    "@storybook/react": "^10.0.4",
+    "@storybook/react-vite": "^10.0.4",
+    "@vanilla-extract/vite-plugin": "^5.1.1",
+    "storybook": "^10.0.4",
+    "vite": "^5"
   }
 }
