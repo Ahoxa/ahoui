@@ -6,7 +6,8 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "bun run --cwd packages/core build && bun run --cwd packages/react build && bun run --cwd packages/solid build"
+    "build": "bun run --cwd packages/core build && bun run --cwd packages/react build && bun run --cwd packages/solid build",
+    "story:react": "cd packages/react && bunx storybook dev -p 6006 "
   },
   "devDependencies": {
     "@types/node": "^24.9.2",
