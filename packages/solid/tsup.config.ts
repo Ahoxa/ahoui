@@ -1,4 +1,5 @@
 import { defineConfig } from "tsup";
+import { solidPlugin } from "esbuild-plugin-solid";
 
 export default defineConfig({
   entry: ["src/index.tsx"],
@@ -7,4 +8,5 @@ export default defineConfig({
   clean: true,
   treeshake: true,
   sourcemap: true,
+  esbuildPlugins: [solidPlugin()],
 });

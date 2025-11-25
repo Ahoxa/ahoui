@@ -13,5 +13,8 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "bunx tsup"
+  },
+  "devDependencies": {
+    "esbuild-plugin-solid": "^0.6.0"
   }
 }
