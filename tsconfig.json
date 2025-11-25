@@ -27,12 +27,7 @@
     "noImplicitOverride": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noPropertyAccessFromIndexSignature": false,
-
-    // Project references
-    "composite": true,
-    "incremental": true,
-    "tsBuildInfoFile": "./dist/tsbuildinfo"
+    "noPropertyAccessFromIndexSignature": false
   },
   "include": [
     "packages/*/src",
